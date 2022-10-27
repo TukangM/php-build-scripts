@@ -15,7 +15,7 @@ Bash script used to compile PHP on MacOS and Linux platforms. Make sure you have
 
 #### Android 64-bit (cross-compile)
 - Only aarch64 targets are supported for Android cross-compile.
-- The `aarch64-linux-musl` toolchain is required. You can compile and install it using https://github.com/pmmp/musl-cross-make (PMMP fork includes musl-libc patches for DNS resolver config path and increasing stack size limit for LevelDB)
+- The `aarch64-linux-musl` toolchain is required. You can compile and install it using https://github.com/TukangM/musl-cross-make (PMMP fork includes musl-libc patches for DNS resolver config path and increasing stack size limit for LevelDB)
 - It is strongly recommended that you enable abusive optimizations for Android targets (`-f` flag) for best performance.
 
 | Script flags | Description                                                                           |
@@ -44,13 +44,4 @@ Bash script used to compile PHP on MacOS and Linux platforms. Make sure you have
 
 ## windows-compile-vs.bat
 
-Batch script utilizing Visual Studio on Windows to compile PHP binaries from sources.
-Ensure you have Visual Studio 2019, `git`, `7z` and `wget` installed in your PATH.
-
-This script doesn't accept parameters, but the following environment variables are influential:
-
-| Variable | Description |
-| -------- | ----------- |
-| `PHP_DEBUG_BUILD` | Disables optimisations and builds PHP with detailed debugging information (useful for debugging segfaults)
-| `SOURCES_PATH` | Where to put the downloaded sources for compilation |
-| `VS_EDITION` | Edition of Visual Studio installed, set to `Community` by default |
+i am not build for windows edition
